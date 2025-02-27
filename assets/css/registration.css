@@ -1,0 +1,386 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    transition: 0.5s;
+    line-height: 90%;
+}
+
+/* создаем контейнер */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.my-120 {
+    margin-top: 120px;
+}
+
+/* подключаем шрифты */
+@font-face {
+    src: url(../fonts/AASteticaRegular.otf);
+    font-family: "AAStetica";
+    font-weight: 400;
+}
+
+@font-face {
+    src: url(../fonts/AASteticaMedium.otf);
+    font-family: "AAStetica";
+    font-weight: 500;
+}
+
+/* header start */
+.header {
+    background-color: #E9DEE8;
+}
+
+header {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_content {
+    display: flex;
+    gap: 20px;
+}
+
+.contacts {
+    display: flex;
+    gap: 10px;
+}
+
+.contact1 {
+    width: 144px;
+    height: 72px;
+    border-radius: 22px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact2 {
+    width: 196px;
+    height: 72px;
+    border-radius: 22px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact1 p {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+}
+
+.contact1 h3 {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+    text-decoration: underline;
+    text-decoration-color: #000;
+    text-decoration-thickness: 1px;
+    cursor: pointer;
+}
+
+.contact2 p {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+}
+
+.contact2 a {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+    text-decoration: underline;
+    text-decoration-color: #000;
+    text-decoration-thickness: 1px;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    width: 80px;
+    height: 72px;
+    border-radius: 22px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-color: #e4bbe1;
+}
+
+/* header end */
+
+/* registration start */
+.registration {
+    margin-top: 48px;
+    width: 672px;
+    height: 1023px;
+    border-radius: 62px;
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration h2 {
+    font-family: "AAStetica";
+    font-weight: 500;
+    font-size: 32px;
+    color: #000;
+}
+
+.forma {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.reg_form {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.reg_input {
+    width: 529px;
+    height: 54px;
+    border-radius: 16px;
+    border: none;
+    background-color: #fff;
+    padding: 16px;
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #A1A1A1;
+}
+
+.reg_input:hover {
+    color: #000;
+}
+
+.forma p {
+    margin-left: 10px;
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #545454;
+}
+
+.checkbox_container {
+    margin-left: 10px;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.checkbox_container p {
+    width: 270px;
+    margin-left: 12px;
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #545454;
+}
+
+.checkbox_container input {
+    display: none;
+}
+
+.checkmark {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #A1A1A1;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: inline-block;
+    position: relative;
+    transition: background 0.3s;
+}
+
+.checkbox_container input:checked + .checkmark {
+    background: #C7D23B;
+}
+
+.reg_btn {
+    margin-top: 24px;
+    width: 529px;
+    height: 54px;
+    border-radius: 16px;
+    border: 2px solid #E4E7C2;
+    background-color: #E4E7C2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+}
+
+.reg_btn:hover {
+    cursor: pointer;
+    border: 2px solid #C7D23B;
+    background-color: #C7D23B;
+    color: #fff;
+}
+
+.reg_text {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.reg_text a {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #545454;
+    text-decoration: underline;
+    text-decoration-color: #545454;
+    text-decoration-thickness: 1px;
+}
+
+/* registration end */
+
+/* footer start */
+.footer {
+    background-color: #F1F1F1;
+    border-radius: 144px 144px 0 0;
+}
+
+.content_up {
+    display: flex;
+    justify-content: space-between;
+    padding: 64px 0 0 0;
+}
+
+.footer_columns {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.footer_columns h2 {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 32px;
+    color: #000; 
+}
+
+.footer_text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer_text a {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #A1A1A1; 
+}
+
+.footer_text a:hover {
+    color: #000;
+}
+
+.content_down {
+    display: flex;
+    justify-content: space-between;
+    padding: 116px 0 64px 0;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.socials h2 {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 32px;
+    color: #000; 
+}
+
+.social_icons {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+}
+
+.social_icons img:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+.footer_columns2 {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.footer_columns2 a {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #A1A1A1; 
+}
+
+.footer_columns2 a:hover {
+    color: #000;
+}
+
+.footer_contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.footer_contacts a {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #2C3036; 
+}
+
+.footer_contacts a:hover {
+    color: #000;
+}
+
+/* footer end */

@@ -1,0 +1,751 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    transition: 0.5s;
+    line-height: 90%;
+}
+
+/* создаем контейнер */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.my-120 {
+    margin-top: 120px;
+}
+
+/* подключаем шрифты */
+@font-face {
+    src: url(../fonts/AASteticaRegular.otf);
+    font-family: "AAStetica";
+    font-weight: 400;
+}
+
+@font-face {
+    src: url(../fonts/AASteticaMedium.otf);
+    font-family: "AAStetica";
+    font-weight: 500;
+}
+
+/* header start */
+.header {
+    background-color: #E9DEE8;
+}
+
+header {
+    padding: 40px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_content {
+    display: flex;
+    gap: 20px;
+}
+
+.contacts {
+    display: flex;
+    gap: 10px;
+}
+
+.contact1 {
+    width: 144px;
+    height: 72px;
+    border-radius: 22px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact2 {
+    width: 196px;
+    height: 72px;
+    border-radius: 22px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact1 p {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+}
+
+.contact1 h3 {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+    text-decoration: underline;
+    text-decoration-color: #000;
+    text-decoration-thickness: 1px;
+    cursor: pointer;
+}
+
+.contact2 p {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+}
+
+.contact2 a {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+    text-decoration: underline;
+    text-decoration-color: #000;
+    text-decoration-thickness: 1px;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    width: 80px;
+    height: 72px;
+    border-radius: 22px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-color: #e4bbe1;
+}
+
+.sorting {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 32px 0 40px 0;
+}
+
+.searchbar {
+    position: relative;
+}
+
+.loupe {
+    position: absolute;
+    left: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search_input {
+    width: 553px;
+    height: 54px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #A1A1A1;
+    padding: 16px 0 16px 70px;
+}
+
+.search_input:hover {
+    color: #000;
+}
+
+.filter_btns {
+    display: flex;
+    gap: 24px;
+}
+
+.btn_filter {
+    height: 54px;
+    padding: 0 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+}
+
+.btn_filter:hover {
+    cursor: pointer;
+    border: 2px solid #e4bbe1;
+    background-color: #e4bbe1;
+}
+
+.btn_filter1 {
+    height: 54px;
+    padding: 0 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #B1BA3A;
+}
+
+.btn_filter1:hover {
+    cursor: pointer;
+    border: 2px solid #e4bbe1;
+    background-color: #e4bbe1;
+    color: #000;
+}
+
+/* header end */
+
+.href {
+    margin-top: 32px;
+    display: flex;
+    gap: 8px;
+}
+
+.href a {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #A1A1A1;
+}
+
+.href a:hover {
+    color: #B1BA3A;
+}
+
+.href span {
+    color: #545454;
+}
+
+.href p {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #A1A1A1;
+}
+
+/* catalog start */
+.catalog {
+    margin-top: 48px;
+}
+
+.catalog_sorting {
+    display: flex;
+    gap: 24px;
+}
+
+.filter_btn {
+    width: 176.38px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 20px;
+    border: 3px solid #F1F1F1;
+    background-color: #F1F1F1;
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #A1A1A1;
+}
+
+.filter_btn:hover {
+    cursor: pointer;
+    border: 3px solid #F1F1F1;
+    background-color: transparent;
+    color: #D5DB84;
+}
+
+.sort_btn {
+    width: 262px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 20px;
+    border: 3px solid #F1F1F1;
+    background-color: #F1F1F1;
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #A1A1A1;
+}
+
+.sort_btn:hover {
+    cursor: pointer;
+    border: 3px solid #F1F1F1;
+    background-color: transparent;
+    color: #D5DB84;
+}
+
+.catalog_cards {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.catalog_cards_row1 {
+    display: flex;
+    gap: 64px;
+}
+
+.catalog_cards_row2 {
+    display: flex;
+    gap: 64px;
+}
+
+
+.catalog_card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card_part1 {
+    position: relative;
+    width: 424px;
+    height: 348px;
+    border-radius: 48px;
+    background-color: #F1F1F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_part2 {
+    padding: 32px 0 0 32px;
+    width: 424px;
+    height: 200px;
+    border-radius: 42px;
+    border: 2px solid #F1F1F1;
+    background-color: transparent;
+}
+
+.card_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.card_text h3 {
+    width: 285px;
+    height: 44px;
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+}
+
+.card_text h4 {
+    margin-top: 16px;
+    width: 309px;
+    height: 28px;
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 16px;
+    color: #545454;
+}
+
+.card_part2 p {
+    margin-top: 16px;
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+}
+
+.card_part3 {
+    display: flex;
+    gap: 24px;
+}
+
+.like {
+    width: 96px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background-color: rgba(195, 165, 193, 0.37);
+    cursor: pointer;
+}
+
+.catalog_btn {
+    width: 304px;
+    height: 58px;
+    border-radius: 18px;
+    border: none;
+    background-color: rgba(195, 165, 193, 0.37);
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+}
+
+.catalog_btn:hover {
+    cursor: pointer;
+    background-color: #E1BADF;
+}
+
+.catalog_promotion {
+    position: absolute;
+    top: 0px;
+    right: -16px;
+    width: 110px;
+    height: 65px;
+    border-radius: 16px;
+    background-color: #FFA159;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalog_promotion p {
+    font-family: "AAStetica";
+    font-weight: 500;
+    font-size: 32px;
+    color: #000;
+}
+
+.card1 {
+    position: relative;
+    width: 912px;
+    height: 382px;
+    border-radius: 64px;
+    background-color: #EFF1D8;
+    padding: 48px;
+}
+
+.card1_text {
+    display: flex;
+    flex-direction: column;
+    gap: 68px;
+}
+
+.text_up {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.text_up h2 {
+    width: 408px;
+    font-family: "AAStetica";
+    font-weight: 500;
+    font-size: 48px;
+    color: #B1BA3A;
+}
+
+.text_up p {
+    width: 278px;
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 32px;
+    color: #000;
+}
+
+.card1_btn {
+    width: 274px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 18px;
+    border: 2px solid #E1BADF;
+    background-color: #E1BADF;
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+}
+
+.card1_btn:hover {
+    cursor: pointer;
+    border: 2px solid #D5DB84;
+    background-color: #D5DB84;
+}
+
+.cat_pic1 {
+    position: absolute;
+    top: 68px;
+    right: 48px;
+}
+
+.card2 {
+    padding: 28px 86px 29px 86px;
+    width: 424px;
+    height: 382px;
+    border-radius: 64px;
+    background-color: #E9DEE8;
+    position: relative;
+}
+
+.card2_pic {
+    width: 194px;
+    height: 273px;
+    z-index: 10;
+}
+
+.card2_text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card2_sale {
+    margin-left: 7px;
+    display: flex;
+    gap: 16px;
+}
+
+.card2_sale h3 {
+    font-family: "AAStetica";
+    font-weight: 500;
+    font-size: 24px;
+    color: #000;
+}
+
+.card2_sale p {
+    font-family: "AAStetica";
+    font-weight: 500;
+    font-size: 24px;
+    color: #A1A1A1;
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #A1A1A1;
+}
+
+.info {
+    position: absolute;
+    bottom: 75px;
+    right: 86px;
+    width: 88px;
+    height: 52px;
+    border-radius: 14px;
+    background-color: #D5DB84;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info p {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+}
+
+.arrow_right {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #E1BADF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow_right:hover {
+    cursor: pointer;
+    background-color: #D5DB84;
+}
+
+.catalog_cards_row3 {
+    display: flex;
+    gap: 64px;
+}
+
+.catalog_cards_row4 {
+    display: flex;
+    gap: 64px;
+}
+
+.card_row4 {
+    position: relative;
+    width: 424px;
+    height: 638px;
+    border-radius: 64px;
+    background-color: #E9DEE8;
+    padding: 85px 58px 86px 58px;
+}
+
+.card_row4_content {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.card_row4_content h2 {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 32px;
+    color: #000;
+}
+
+.promotion4 {
+    position: absolute;
+    top: 179px;
+    right: 50px;
+    width: 110px;
+    height: 65px;
+    border-radius: 16px;
+    background-color: #FFA159;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promotion4 p {
+    font-family: "AAStetica";
+    font-weight: 500;
+    font-size: 32px;
+    color: #000;
+}
+
+.catalog_cards_row5 {
+    display: flex;
+    gap: 64px;
+}
+
+/* catalog end */
+
+/* footer start */
+.footer {
+    background-color: #F1F1F1;
+    border-radius: 144px 144px 0 0;
+}
+
+.content_up {
+    display: flex;
+    justify-content: space-between;
+    padding: 64px 0 0 0;
+}
+
+.footer_columns {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.footer_columns h2 {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 32px;
+    color: #000;
+}
+
+.footer_text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer_text a {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #A1A1A1;
+}
+
+.footer_text a:hover {
+    color: #000;
+}
+
+.content_down {
+    display: flex;
+    justify-content: space-between;
+    padding: 116px 0 64px 0;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.socials h2 {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 32px;
+    color: #000;
+}
+
+.social_icons {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+}
+
+.social_icons img:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+.footer_columns2 {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.footer_columns2 a {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #A1A1A1;
+}
+
+.footer_columns2 a:hover {
+    color: #000;
+}
+
+.footer_contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.footer_contacts a {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #2C3036;
+}
+
+.footer_contacts a:hover {
+    color: #000;
+}
+
+/* footer end */

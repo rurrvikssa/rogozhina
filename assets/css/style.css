@@ -1,0 +1,1129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    transition: 0.5s;
+    line-height: 90%;
+}
+
+body {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+body.loaded {
+    opacity: 1;
+}
+
+
+/* создаем контейнер */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.my-120 {
+    margin-top: 120px;
+}
+
+/* подключаем шрифты */
+@font-face {
+    src: url(../fonts/AASteticaRegular.otf);
+    font-family: "AAStetica";
+    font-weight: 400;
+}
+
+@font-face {
+    src: url(../fonts/AASteticaMedium.otf);
+    font-family: "AAStetica";
+    font-weight: 500;
+}
+
+/* header and banner start */
+.banner {
+    background-image: url(../images/banner/banner_img.png);
+    width: 1920px;
+    height: 1000px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+header {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+nav a {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 20px;
+    color: #C3A5C1;
+}
+
+nav a:hover {
+    transform: translateY(-5px);
+}
+
+.header_content {
+    display: flex;
+    gap: 20px;
+}
+
+.contacts {
+    display: flex;
+    gap: 10px;
+}
+
+.contact1 {
+    width: 144px;
+    height: 72px;
+    border-radius: 22px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact2 {
+    width: 196px;
+    height: 72px;
+    border-radius: 22px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact1 p {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+}
+
+.contact1 h3 {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+    text-decoration: underline;
+    text-decoration-color: #000;
+    text-decoration-thickness: 1px;
+    cursor: pointer;
+}
+
+.contact2 p {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+}
+
+.contact2 a {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+    text-decoration: underline;
+    text-decoration-color: #000;
+    text-decoration-thickness: 1px;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    width: 80px;
+    height: 72px;
+    border-radius: 22px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-color: #e4bbe1;
+}
+
+.sorting {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.searchbar {
+    position: relative;
+    
+}
+
+.loupe {
+    position: absolute;
+    left: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search_input {
+    width: 553px;
+    height: 54px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #A1A1A1;
+    padding: 16px 0 16px 70px;
+}
+
+.search_input:hover {
+    color: #000;
+}
+
+.filter_btns {
+    display: flex;
+    gap: 24px;
+}
+
+.btn_filter {
+    height: 54px;
+    padding: 0 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+}
+
+.btn_filter:hover {
+    cursor: pointer;
+    border: 2px solid #e4bbe1;
+    background-color: #e4bbe1;
+}
+
+.btn_filter1 {
+    height: 54px;
+    padding: 0 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #B1BA3A;
+}
+
+.btn_filter1:hover {
+    cursor: pointer;
+    border: 2px solid #e4bbe1;
+    background-color: #e4bbe1;
+    color: #000;
+}
+
+.banner_info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 108px;
+}
+
+.banner_pic {
+    position: absolute;
+    left: 632px;
+}
+
+.banner_text {
+    position: relative;
+    width: 472px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.banner_text h1 {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 64px;
+    color: #000;
+}
+
+.banner_btn {
+    width: 398px;
+    height: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 24px;
+    border: 2px solid #E1BADF;
+    background-color: #E1BADF;
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 32px;
+    color: #000;
+}
+
+.banner_btn:hover {
+    cursor: pointer;
+    border: 2px solid #D5DB84;
+    background-color: #D5DB84;
+}
+
+/* header and banner end */
+
+/* popular start */
+.title {
+    width: 1400px;
+    height: 85px;
+    padding: 0 32px;
+    border-radius: 24px;
+    background-color: #F1F1F1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title1 {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.title1 h2 {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 32px;
+    color: #000;
+}
+
+.title2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title2 a {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+}
+
+.title2 a:hover {
+    color: #C3A5C1;
+}
+
+.popular_cards {
+    position: relative;
+    display: flex;
+    gap: 64px;
+    align-items: center;
+}
+
+.pop_card {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.popcard_part1 {
+    position: relative;
+    width: 424px;
+    height: 348px;
+    border-radius: 48px;
+    background-color: #F1F1F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop_fire {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+}
+
+.popcard_part2 {
+    padding: 32px 0 0 32px;
+    width: 424px;
+    height: 200px;
+    border-radius: 42px; 
+    border: 2px solid #F1F1F1;
+    background-color: transparent;
+}
+
+.popcard_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.popcard_text h3 {
+    width: 285px;
+    height: 44px;
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+}
+
+.popcard_text h4 {
+    margin-top: 16px;
+    width: 309px;
+    height: 28px;
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 16px;
+    color: #545454;
+}
+
+.popcard_part2 p {
+    margin-top: 16px;
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+}
+
+.popcard_part3 {
+    display: flex;
+    gap: 24px;
+}
+
+.pop_btn {
+    width: 304px;
+    height: 58px;
+    border-radius: 18px;
+    border: none;
+    background-color: rgba(195, 165, 193, 0.37);
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #000; 
+}
+
+.pop_btn:hover {
+    cursor: pointer;
+    background-color: #E1BADF;
+}
+
+.like {
+    width: 96px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background-color: rgba(195, 165, 193, 0.37);
+    cursor: pointer;
+}
+
+.arrow_right {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #E1BADF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -40px
+}
+
+.arrow_right:hover {
+    cursor: pointer;
+    background-color: #D5DB84;
+}
+
+/* popular end */
+
+/* promotions start */
+.promotions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.prom_leftcontent {
+    position: relative;
+    width: 627px;
+    height: 800px;
+    border-radius: 64px;
+    background-color: #E9DEE8;
+    padding: 52px 97px;
+}
+
+.prleft_content {
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+}
+
+.prom_img1 {
+    width: 433px;
+    height: 526px;
+}
+
+.prleft_content h2 {
+    margin-left: 51px;
+    width: 344px;
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 48px;
+    color: #000;
+}
+
+.promotion1 {
+    position: absolute;
+    bottom: 507px;
+    left: 380px;
+    width: 135px;
+    height: 80px;
+    border-radius: 16px;
+    background-color: #FFA159;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promotion1 p {
+    font-family: "AAStetica";
+    font-weight: 500;
+    font-size: 48px;
+    color: #000;
+}
+
+.arrow_right1 {
+    position: absolute;
+    bottom: 360px;
+    right: 32px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #E1BADF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow_right1:hover {
+    cursor: pointer;
+    background-color: #D5DB84;
+}
+
+.prom_rightcontent {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+
+.prom_up {
+    position: relative;
+    width: 709px;
+    height: 368px;
+    border-radius: 62px;
+    background-color: #EFF1D8;
+    padding: 61px 76px 28px 75px;
+}
+
+.prom_img2 {
+    width: 198px;
+    height: 279px;
+}
+
+.prom_img {
+    display: flex;
+    gap: 16px;
+}
+
+.prom_img h2 {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 48px;
+    color: #000;
+    margin-top: 62px;
+    
+}
+
+.promotion2 {
+    position: absolute;
+    top: 18px;
+    left: 209px;
+    width: 135px;
+    height: 80px;
+    border-radius: 16px;
+    background-color: #FFA159;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promotion2 p {
+    font-family: "AAStetica";
+    font-weight: 500;
+    font-size: 48px;
+    color: #000;
+}
+
+.arrow_right2 {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #E1BADF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow_right2:hover {
+    cursor: pointer;
+    background-color: #D5DB84;
+}
+
+.cat_dog_cards {
+    display: flex;
+    gap: 42px;
+}
+
+.new_cat {
+    position: relative;
+    width: 334px;
+    height: 390px;
+    border-radius: 62px;
+    background-color: #FAD8C7;
+}
+
+.new_cat_content {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 198px;
+}
+
+.cat_img {
+    position: absolute;
+    bottom: 0px;
+    left: 33px;
+}
+
+.new_cat_content h3 {
+    width: 260px;
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 32px;
+    color: #000;
+    text-align: center;
+}
+
+.prom_btn {
+    width: 159px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 18px;
+    border: 2px solid #E1BADF;
+    background-color: #E1BADF;
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+    z-index: 5;
+}
+
+.prom_btn:hover {
+    cursor: pointer;
+    border: 2px solid #D5DB84;
+    background-color: #D5DB84;
+}
+
+.new_dog {
+    position: relative;
+    width: 334px;
+    height: 390px;
+    border-radius: 62px;
+    background-color: #FAD8C7;
+}
+
+.new_dog_content {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 198px;
+}
+
+.dog_img {
+    position: absolute;
+    bottom: 0px;
+    left: 14px;
+}
+
+.new_dog_content h3 {
+    width: 260px;
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 32px;
+    color: #000;
+    text-align: center;
+}
+
+/* promotions end */
+
+/* catalog start */
+.catalog_search_sort {
+    margin-top: 48px;
+    display: flex;
+    gap: 24px;
+}
+
+.catalog_searchbar {
+    position: relative;
+}
+
+.loupe {
+    position: absolute;
+    left: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cat_search_input {
+    width: 912px;
+    height: 54px;
+    border-radius: 20px;
+    border: 2px solid #F1F1F1;
+    background-color: #F1F1F1;
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #A1A1A1;
+    padding: 16px 0 16px 70px;
+}
+
+.cat_search_input:hover {
+    color: #000;
+}
+
+.catalog_sorting {
+    display: flex;
+    gap: 24px;
+}
+
+.filter_btn {
+    width: 176.38px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 20px;
+    border: 3px solid #F1F1F1;
+    background-color: #F1F1F1;
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #A1A1A1;
+}
+
+.filter_btn:hover {
+    cursor: pointer;
+    border: 3px solid #F1F1F1;
+    background-color: transparent;
+    color: #D5DB84;
+}
+
+.sort_btn {
+    width: 262px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 20px;
+    border: 3px solid #F1F1F1;
+    background-color: #F1F1F1;
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #A1A1A1;
+}
+
+.sort_btn:hover {
+    cursor: pointer;
+    border: 3px solid #F1F1F1;
+    background-color: transparent;
+    color: #D5DB84;
+}
+
+.catalog_cards {
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+}
+
+.catalog_cards_row1 {
+    display: flex;
+    gap: 64px;
+}
+
+.catalog_cards_row2 {
+    display: flex;
+    gap: 64px;
+}
+
+
+.catalog_card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card_part1 {
+    position: relative;
+    width: 424px;
+    height: 348px;
+    border-radius: 48px;
+    background-color: #F1F1F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_part2 {
+    padding: 32px 0 0 32px;
+    width: 424px;
+    height: 200px;
+    border-radius: 42px; 
+    border: 2px solid #F1F1F1;
+    background-color: transparent;
+}
+
+.card_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.card_text h3 {
+    width: 285px;
+    height: 44px;
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+}
+
+.card_text h4 {
+    margin-top: 16px;
+    width: 309px;
+    height: 28px;
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 16px;
+    color: #545454;
+}
+
+.card_part2 p {
+    margin-top: 16px;
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+}
+
+.card_part3 {
+    display: flex;
+    gap: 24px;
+}
+
+.catalog_btn {
+    width: 304px;
+    height: 58px;
+    border-radius: 18px;
+    border: none;
+    background-color: rgba(195, 165, 193, 0.37);
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #000; 
+}
+
+.catalog_btn:hover {
+    cursor: pointer;
+    background-color: #E1BADF;
+}
+
+.catalog_promotion {
+    position: absolute;
+    top: 0px;
+    right: -16px;
+    width: 110px;
+    height: 65px;
+    border-radius: 16px;
+    background-color: #FFA159;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalog_promotion p {
+    font-family: "AAStetica";
+    font-weight: 500;
+    font-size: 32px;
+    color: #000;
+}
+
+.arrow_down {
+    margin-top: 48px;
+    margin-left: 660px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #E1BADF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow_down:hover {
+    cursor: pointer;
+    background-color: #D5DB84;
+}
+
+/* catalog end */
+
+/* form start */
+.form {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.form_left {
+    width: 676px;
+    height: 600px;
+    border-radius: 64px;
+    background-color: #EFF1D8;
+    display: flex;
+    gap: 1px;
+    flex-direction: column;
+    padding: 48px 46px 0 47px;
+}
+
+.form_img {
+    width: 583px;
+    height: 379px;
+}
+
+.form_left h2 {
+    width: 534px;
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 48px;
+    color: #000;
+    text-align: center;
+}
+
+.form_right {
+    position: relative;
+    width: 676px;
+    height: 600px;
+    border-radius: 64px;
+    background-color: #F1F1F1;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.inputs {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 93px;
+    margin-left: 74px;
+}
+
+.form_input {
+    z-index: 10;
+    width: 528px;
+    height: 54px;
+    border-radius: 16px;
+    border: none;
+    background-color: #fff;
+    padding: 16px;
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #A1A1A1;
+}
+
+.form_input:hover {
+    color: #000;
+}
+
+.form_btn {
+    margin-top: 48px;
+    margin-left: 74px;
+    width: 181px;
+    height: 54px;
+    border-radius: 16px;
+    border: 2px solid #E4E7C2;
+    background-color: #E4E7C2;
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #000; 
+    cursor: pointer;
+}
+
+/* form end */
+
+/* footer start */
+.footer {
+    background-color: #F1F1F1;
+    border-radius: 144px 144px 0 0;
+}
+
+.content_up {
+    display: flex;
+    justify-content: space-between;
+    padding: 64px 0 0 0;
+}
+
+.footer_columns {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.footer_columns h2 {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 32px;
+    color: #000; 
+}
+
+.footer_text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer_text a {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #A1A1A1; 
+}
+
+.footer_text a:hover {
+    color: #000;
+}
+
+.content_down {
+    display: flex;
+    justify-content: space-between;
+    padding: 116px 0 64px 0;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.socials h2 {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 32px;
+    color: #000; 
+}
+
+.social_icons {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+}
+
+.social_icons img:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+.footer_columns2 {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.footer_columns2 a {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #A1A1A1; 
+}
+
+.footer_columns2 a:hover {
+    color: #000;
+}
+
+.footer_contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.footer_contacts a {
+    font-family: "AAStetica";
+    font-weight: 400;
+    font-size: 24px;
+    color: #2C3036; 
+}
+
+.footer_contacts a:hover {
+    color: #000;
+}
+
+/* footer end */
